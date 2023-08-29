@@ -111,6 +111,7 @@ a:active {
 .table {
     width: 100%;
     padding: 0 10px;
+    overflow: auto;
 }
 
 .table th {
@@ -174,6 +175,20 @@ a:active {
     .contact-row {
         display: inline;
     }
+}
 
+@media (max-width: 400px) {
+    body {
+        font-size: 13px;
+    }
+}
 
+@media (max-width: 300px) {
+    body {
+        font-size: 8px;
+    }
+
+    img {  
+        width: 50px;
+    }
 }
