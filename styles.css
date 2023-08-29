@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+    background: #f7f2f2;
+    color: #181b1f;
+}
+
+.container {
+    max-width: 850px;
+    margin: 20px auto;
+}
+
+img {
+    border: 1px solid #181b1f;
+    border-radius: 10%;
+    width: 150px;
+    object-fit: cover;
+}
+
+.info-text {
+    margin-left: 25px;
+}
+
+.info {
+    display: flex;
+    padding-left: 15px;
+    font-style: italic;
+    color: #4d5863;
+    margin-bottom: 10px;
+}
+
+.info h1 {
+    color: #000;
+    font-style: normal;
+}
+
+.card {
+    margin: 5px;
+    padding: 15px;
+    padding-top: 5px;
+    border: 1px solid #f2f2f7;
+    border-radius: 10px;
+    background:  #d9e6f2;
+}
+
+.info h3 {
+    color: black;
+    font-style: normal;
+    margin: 12px 0;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+}
+
+a:last-child {
+    padding-left: 0px;
+}
+
+a:hover {
+    color: #A9A9A9;
+}
+
+a:visited {
+    color: #A9A9A9;
+}
+
+a:active {
+    color: #B0C4DE;
+}
+
+.btn {
+    background: #4c7297;
+    border: 1px solid #164574;
+    color: #f7f2f2;
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-left: 10px;
+    display: block;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.list {
+    padding-left: 25px;
+}
+
+.list li{
+    margin-bottom: 5px;
+    list-style: square;
+}
+
+.list li:last-child {
+    margin-bottom: 0px;
+}
+
+.table {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.table th {
+    background: #b4c7e0;
+    padding: 5px 10px;
+}
+
+.table td{
+    background: #c8d6e8;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.contact label {
+    margin-left: 10px;
+}
+
+.contact input,
+.contact textarea {
+    border: none;
+    border-bottom: 1px solid #A9A9A9;
+    background: transparent;
+    margin: 15px;
+    outline: none;
+    width: 90%;
+}
+
+.contact textarea {
+    width: calc(100% - 30px);
+}
+
+.contact-row {
+    display: flex;
+}
+
+.contact-row .contact {
+    margin-right: 30px;
+    width: 100%;
+}
+
+.contact-row .contact:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 650px){
+    .info {
+        display: inline;
+        text-align: center;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    .info-text {
+        margin-bottom: 15px;
+    }
+    
+    .contact-row {
+        display: inline;
+    }
+
+
+}

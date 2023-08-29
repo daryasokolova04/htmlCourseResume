@@ -9,67 +9,123 @@
     <meta name="description" content="Резюме фронтенд-разработчика Соколовой Дарьи"> 
     
     <title>Резюме</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="dariaWebpage.png" width="150" alt="Daria Sokolova">
-    <h1>Соколова Дарья</h1>
 
-    <p>Я студент 2 курса <strong>университета ИТМО.</strong></p>
-    <p>Мне нравится <em>изучать программирование, путешествовать, заниматься спортом.</em></p>
+    <div class="container">
 
-    <h3>Социальные сети</h3>
-    <a href="https://vk.com/dariasokolovaa" target="_blank">Вконтакте</a>
-    |
-    <a href="https://t.me/dariaasokolovaa" target="">Telegram</a>
+        <div class="info">
 
-    <h3>Мои хобби</h3>
-    <ul>
-        <li>Путешествия</li>
-        <li>Спорт</li>
-        <li>Готовка</li>
-    </ul>
+            <img src="dariaWeb.png" alt="Daria Sokolova">
+            <div class="info-text">
+                <h1>Соколова Дарья</h1>
+                <p>Я студент 2 курса университета ИТМО.</p>
+                <p>Мне нравится изучать программирование, путешествовать, заниматься спортом.</p>
 
-    <h3>Образование</h3>
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Статус</th>
-                <th>Годы</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Лицей 38</td>
-                <td>ученик</td>
-                <td>2011 - 2022</td>
-            </tr>
-            <tr>
-                <td>Университет ИТМО</td>
-                <td>студент</td>
-                <td>2022 - сейчас</td>
-            </tr>
-        </tbody>
-    </table>
+            <h3>Социальные сети</h3>
+            <a href="https://vk.com/dariasokolovaa" target="_blank">Вконтакте</a>
+            |
+            <a href="https://t.me/dariaasokolovaa" target="">Telegram</a>
+        </div>
 
-    <h3>Связаться со мной</h3>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="email" id="name" placeholder="Введите имя">
     </div>
+    
 
-    <div>
-        <label for="email">Ваш email:</label>
-        <input type="email" id="email" placeholder="Введите email">
+        <div class="card">
+            <h3>Мои хобби</h3>
+            <ul class="list">
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>Готовка</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Образование</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Статус</th>
+                        <th>Годы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Лицей 38</td>
+                        <td>ученик</td>
+                        <td>2011 - 2022</td>
+                    </tr>
+                    <tr>
+                        <td>Университет ИТМО</td>
+                        <td>студент</td>
+                        <td>2022 - сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>Пройденные курсы</h3>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Статус</th>
+                        <th>Период прохождения</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Курс. Основы Python. Яндекс Академия</td>
+                        <td>Пройден</td>
+                        <td>январь-апрель 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Книга. Илья Кантор "Язык Javascript"</td>
+                        <td>Пройден</td>
+                        <td>июль 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Курс. Основы Javascript. Result</td>
+                        <td>Пройден</td>
+                        <td>август 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Курс. HTML & CSS. Result</td>
+                        <td>В процессе</td>
+                        <td>август 2023 - сейчас</td>
+                    </tr>
+                </tbody>
+            </table>    
+        </div>
+
+        <div class="card">
+            <h3>Связаться со мной</h3>
+
+            <div class="contact-row">
+                <div class="contact">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+            
+                <div class="contact">
+                    <label for="email">Ваш email:</label>
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+            </div>
+        
+            <div class="contact">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea id="message" cols="95" rows="5" placeholder="Введите сообщение..."></textarea>
+            </div>
+        
+            <button type="submit" class="btn">Отправить!</button>
+        </div>
     </div>
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
-        <br>
-        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-    </div>
-
-    <button type="submit">Отправить!</button>
 
 
 </body>
